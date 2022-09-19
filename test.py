@@ -1,2 +1,2 @@
-  asdfasdf
-  asdf
+import streamlit as st
+st.write("Hello St :wave:")
