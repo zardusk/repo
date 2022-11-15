@@ -2,12 +2,12 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
-import locale
+#import locale
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 import nltk
 from nltk.corpus import stopwords
-locale.setlocale(locale.LC_TIME, 'es_EC.UTF-8')
+#locale.setlocale(locale.LC_TIME, 'es_EC.UTF-8')
 
 def main():
     pass
