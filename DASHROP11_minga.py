@@ -111,17 +111,17 @@ with st.expander('Matriz de Riesgo Operativo Cualitativo'):
 
 st.markdown("____")
 
-col1,colm,col2 = st.columns((1,3,1))
-with colm:
-    st.markdown("**Wordcloud de riesgos descritos**")
-    text = " ".join(i for i in df1_matrizrop.descripcion_riesgo)
-    stopwords = set(stopwords.words('spanish', 'english')) 
-    wordcloud = WordCloud(stopwords=stopwords, background_color="white").generate(text)
-    figAA = plt.figure( figsize=(15,10))
-    plt.imshow(wordcloud, interpolation='bilinear')
-    plt.axis("off")
-    st.write(figAA)
-st.markdown("____")
+#col1,colm,col2 = st.columns((1,3,1))
+#with colm:
+#    st.markdown("**Wordcloud de riesgos descritos**")
+#    text = " ".join(i for i in df1_matrizrop.descripcion_riesgo)
+#    stopwords = set(stopwords.words('spanish', 'english')) 
+#    wordcloud = WordCloud(stopwords=stopwords, background_color="white").generate(text)
+#    figAA = plt.figure( figsize=(15,10))
+#    plt.imshow(wordcloud, interpolation='bilinear')
+#    plt.axis("off")
+#    st.write(figAA)
+#st.markdown("____")
 col1,colm,col2 = st.columns((1,0.1,1))
 with col1:
     df3_fig3 = df1_matrizrop[['calif_impacto','calif_frecuencia','calif_riesgo_inherente_cc','nivel_riesgo_inherente_cc']]
